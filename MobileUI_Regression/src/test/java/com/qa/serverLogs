@@ -1,0 +1,182 @@
+2024-03-30 11:51:43:185 [Appium] Welcome to Appium v2.5.1 (REV 6170b6297c61ef0b68814c708eeff2199d8b0d11)
+2024-03-30 11:51:43:186 [Appium] Non-default server args:
+2024-03-30 11:51:43:187 [Appium] { port: 10247 }
+2024-03-30 11:51:43:187 [Appium] The autodetected Appium home path: /Users/shivrajbidari/.appium
+2024-03-30 11:51:43:188 [Appium] Attempting to load driver uiautomator2...
+2024-03-30 11:51:43:188 [Appium] Attempting to load driver xcuitest...
+2024-03-30 11:51:43:190 [Appium] Requiring driver at /Users/shivrajbidari/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2024-03-30 11:51:43:191 [Appium] Requiring driver at /Users/shivrajbidari/.appium/node_modules/appium-xcuitest-driver/build/index.js
+2024-03-30 11:51:44:136 [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.948s
+2024-03-30 11:51:44:137 [Appium] XCUITestDriver has been successfully loaded in 0.948s
+2024-03-30 11:51:44:151 [Appium] Appium REST http interface listener started on http://0.0.0.0:10247
+2024-03-30 11:51:44:151 [Appium] You can provide the following URLs in your client code to connect to this server:
+2024-03-30 11:51:44:151 [Appium] 	http://127.0.0.1:10247/ (only accessible from the same host)
+2024-03-30 11:51:44:151 [Appium] 	http://192.168.1.47:10247/
+2024-03-30 11:51:44:151 [Appium] Available drivers:
+2024-03-30 11:51:44:151 [Appium]   - uiautomator2@2.40.1 (automationName 'UiAutomator2')
+2024-03-30 11:51:44:151 [Appium]   - xcuitest@5.13.2 (automationName 'XCUITest')
+2024-03-30 11:51:44:151 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2024-03-30 11:51:44:382 [HTTP] --> GET /status
+2024-03-30 11:51:44:382 [HTTP] {}
+2024-03-30 11:51:44:383 [AppiumDriver@4a6b] Calling AppiumDriver.getStatus() with args: []
+2024-03-30 11:51:44:384 [AppiumDriver@4a6b] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.5.1","git-sha":"6170b6297c61ef0b68814c708eeff2199d8b0d11","built":"2024-02-05 13:17:33 +0100"}}
+2024-03-30 11:51:44:387 [HTTP] <-- GET /status 200 5 ms - 199
+2024-03-30 11:51:44:387 [HTTP] 
+2024-03-30 11:51:44:541 [HTTP] --> GET /status
+2024-03-30 11:51:44:541 [HTTP] {}
+2024-03-30 11:51:44:541 [AppiumDriver@4a6b] Calling AppiumDriver.getStatus() with args: []
+2024-03-30 11:51:44:541 [AppiumDriver@4a6b] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.5.1","git-sha":"6170b6297c61ef0b68814c708eeff2199d8b0d11","built":"2024-02-05 13:17:33 +0100"}}
+2024-03-30 11:51:44:541 [HTTP] <-- GET /status 200 1 ms - 199
+2024-03-30 11:51:44:542 [HTTP] 
+2024-03-30 11:51:44:554 [Appium] Received SIGTERM - shutting down
+2024-03-30 11:51:44:554 [AppiumDriver@4a6b] There are no active sessions for cleanup
+2024-03-30 11:51:44:556 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Socket.Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.<computed> [as info] (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/create-logger.js:81:14)
+    at EventEmitter.<anonymous> (/opt/homebrew/lib/node_modules/appium/lib/logsink.js:220:22)
+    at EventEmitter.emit (node:events:519:28)
+    at EventEmitter.<anonymous> (/opt/homebrew/lib/node_modules/appium/node_modules/npmlog/lib/log.js:247:8)
+2024-03-30 11:51:44:556 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Socket.Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:519:28)
+    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
+2024-03-30 11:51:44:557 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Socket.Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:519:28)
+    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
+2024-03-30 11:51:44:557 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Socket.Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:519:28)
+    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
+2024-03-30 11:51:44:557 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+    at writeGeneric (node:internal/stream_base_commons:151:3)
+    at Socket._writeGeneric (node:net:952:11)
+    at Socket._write (node:net:964:8)
+    at writeOrBuffer (node:internal/streams/writable:564:12)
+    at _write (node:internal/streams/writable:493:10)
+    at Socket.Writable.write (node:internal/streams/writable:502:10)
+    at Console.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/opt/homebrew/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at Console.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.ondata (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+    at writeOrBuffer (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:381:5)
+    at DerivedLogger.Writable.write (/opt/homebrew/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+    at DerivedLogger.log (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/opt/homebrew/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:519:28)
+    at processEmit (/opt/homebrew/lib/node_modules/appium/node_modules/lockfile/node_modules/signal-exit/index.js:199:34)
